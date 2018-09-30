@@ -1,0 +1,62 @@
+{
+  "name": "yandex-aeroports",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Яндек Аэропорты (тестовое задание)",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "8.3.x",
+    "browser-sync": "2.23.x",
+    "gulp": "3.9.x",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "3.5.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "posthtml-include": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "normalize.less": "^1.0.0",
+    "gulp-uglify": "^1.4.2",
+    "stylelint": "9.2.x",
+    "gulp-rigger": "^0.5.8",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "eslint": "5.0.1",
+    "eslint-config-htmlacademy": "0.5.x",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "eslint": "eslint \"js/\"",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "8.11"
+  },
+  "dependencies": {
+    "ajv": "^6.4.0",
+    "cwebp": "^2.0.2",
+    "del": "^3.0.0",
+    "gulp-htmlmin": "^4.0.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.0.0",
+    "pump": "^3.0.0"
+  }
+}
